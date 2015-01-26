@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  </head>
+  <body>    
+    <div class="container">      
+      <div class="col-md-12"> 
+        <p>Best of luck to you...</p>
+      </div>
+    </div>     
+    <script type="text/javascript">
+
+     (function($){
+        $.getJSON("../json/SomethingEnticing.json").done(function(response){
+            enticing = response;
+        });
+
+         $.getJSON("../json/WhatsBuzzing.json").done(function(response){
+            buzzing = response;
+        });
+
+     })(jQuery);       
+
+    </script>
+  </body>
+</html>

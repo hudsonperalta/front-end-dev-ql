@@ -1,0 +1,21 @@
+{
+	"header": "Something Enticing",
+	"subHeadings": {
+		"ideate": {
+			"title": "Ideate",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a dolor orci. Nam euismod ligula id elementum dignissim."
+		},
+		"plan": {
+			"title": "Plan",
+			"description": "Enum ipsum dolor sit amet, consectetur adipiscing elit. Cras a dolor orci. Nam euismod ligula id elementum dignissim."
+		},
+		"collaborate": {
+			"title": "Collaborate",
+			"description": "Ptor ipsum dolor sit amet, consectetur adipiscing elit. Cras a dolor orci. Nam euismod ligula id elementum dignissim."
+		},
+		"gage": {
+			"title": "Gage",
+			"description": "Eta ipsum dolor sit amet, consectetur adipiscing elit. Cras a dolor orci. Nam euismod ligula id elementum dignissim."
+		}
+	}
+}

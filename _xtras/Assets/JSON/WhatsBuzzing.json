@@ -1,0 +1,47 @@
+{
+	"header": "What's Buzzing",
+	"socialItems": [
+		{
+			"item": {
+				"name": "Chris Sallamana",
+				"text": "#UXU has benefitted me in this way that way. An irreplacable tool that is my go-to tool.",
+				"source": "facebook"
+			}
+		},
+		{
+			"item": {
+				"name": "Michael Henson",
+				"text": "Positive words about #UXU and other jazz.",
+				"source": "twitter"
+			}
+		},
+		{
+			"item": {
+				"name": "Jared Simmons",
+				"text": "#UXU has benefitted me in this way that way. An irreplacable tool that is my go-to tool.",
+				"source": "twitter"			
+			}
+		},
+		{
+			"item": {
+				"name": "Tom Delonge",
+				"text": "#UXU has benefitted me in this way that way. An irreplacable tool that is my go-to tool.",
+				"source": "facebook"
+			}
+		},
+		{
+			"item": {
+				"name": "Brett Michaels",
+				"text": "Positive words about #UXU and other jazz.",
+				"source": "twitter"
+			}
+		},
+		{
+			"item": {
+				"name": "Bert Bertington",
+				"text": "#UXU has benefitted me in this way that way. An irreplacable tool that is my go-to tool.",
+				"source": "twitter"			
+			}
+		}
+	]
+}

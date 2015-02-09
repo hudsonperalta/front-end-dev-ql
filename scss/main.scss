@@ -1,5 +1,12 @@
-// Modules and Variables
+// Mixins and Variables
 @import "partials/base";
 
 // Partials
 @import "partials/normalize";
+
+// Modules
+@import "modules/fonts";
+@import "modules/layout";
+
+// Entypo
+@import url(http://weloveiconfonts.com/api/?family=entypo);

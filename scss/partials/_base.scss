@@ -1,1 +1,25 @@
+// Use Compass ('cause it rocks!)
+@import "compass";
+
 // Base - imports for all mixins + global project variables
+html, body {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+button {
+    background: none;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}

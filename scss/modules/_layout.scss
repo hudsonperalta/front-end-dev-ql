@@ -1,13 +1,43 @@
+h1,h2,h3 {
+    font-family: $fontHead;
+    font-weight: 300;
+
+    strong {
+        font-weight: 400;
+    }
+}
+
+button {
+    background: none;
+    padding: 0.357em 0.714em;
+    border: 2px solid $white;
+    border-radius: 1.429em;
+}
+
 header {
-    background: black;
-    color: white;
+    background: $black;
+    color: $white;
+    padding-bottom: 2.571em;
 
         section {
-            margin: 25px 0;
+            margin: 1.786em 0;
             text-align: center;
 
             button:first-child {
-                margin-right: 20px;
+                margin-right: 1.429em;
             }
         }
+}
+
+.full-block {
+    padding: 3em;
+
+    h3 {
+        text-align: center;
+    }
+}
+
+.social-block {
+    background: $black;
+    padding: 2em;
 }

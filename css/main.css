@@ -6,19 +6,13 @@ html, body {
 
 body {
   color: black;
+  font-size: 14px;
   margin: 0;
   padding: 0;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
-}
-
-button {
-  background: none;
-  padding: 5px 10px;
-  border: 2px solid white;
-  border-radius: 20px;
 }
 
 /* normalize-scss 3.0.2+normalize.3.0.2 | MIT/GPLv2 License | bit.ly/normalize-scss */
@@ -569,14 +563,42 @@ th {
   font-family: 'entypo', sans-serif;
 }
 
+h1, h2, h3 {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 300;
+}
+h1 strong, h2 strong, h3 strong {
+  font-weight: 400;
+}
+
+button {
+  background: none;
+  padding: 0.357em 0.714em;
+  border: 2px solid #FFF;
+  border-radius: 1.429em;
+}
+
 header {
-  background: black;
-  color: white;
+  background: #333;
+  color: #FFF;
+  padding-bottom: 2.571em;
 }
 header section {
-  margin: 25px 0;
+  margin: 1.786em 0;
   text-align: center;
 }
 header section button:first-child {
-  margin-right: 20px;
+  margin-right: 1.429em;
+}
+
+.full-block {
+  padding: 3em;
+}
+.full-block h3 {
+  text-align: center;
+}
+
+.social-block {
+  background: #333;
+  padding: 2em;
 }

@@ -1,6 +1,7 @@
 h1,h2,h3 {
-    font-family: $fontHead;
+    font-family: $headFont;
     font-weight: 300;
+    margin: 0;
 
     strong {
         font-weight: 400;
@@ -15,7 +16,8 @@ button {
 }
 
 header {
-    background: $black;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
     color: $white;
     padding-bottom: 2.571em;
 
@@ -30,10 +32,20 @@ header {
 }
 
 .full-block {
-    padding: 3em;
+    padding: $lrg-vert-pd $xlg-pd;
+
+    &.split {
+        padding: $sml-vert-pd $med-pd;
+    }
 
     h3 {
         text-align: center;
+    }
+
+    .column {
+        width: 49%; // should be 50%?
+        padding: $med-pd $lrg-pd;
+        display: inline-block;
     }
 }
 

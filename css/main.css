@@ -1,26 +1,10 @@
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-html, body {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-body {
-  color: black;
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 /* normalize-scss 3.0.2+normalize.3.0.2 | MIT/GPLv2 License | bit.ly/normalize-scss */
 /**
  * Establish a vertical rhythm unit using $base-font-size, $base-line-height,
  * and $rhythm-unit variables. Also, correct text resizing oddly in IE 6/7 when
  * body `font-size` is set using `em` units.
  */
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 html {
   font-size: 100%;
   line-height: 1.5em;
@@ -559,6 +543,22 @@ th {
   padding: 0;
 }
 
+html, body {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  color: black;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
@@ -566,6 +566,7 @@ th {
 h1, h2, h3 {
   font-family: "Gill Sans", sans-serif;
   font-weight: 300;
+  margin: 0;
 }
 h1 strong, h2 strong, h3 strong {
   font-weight: 400;
@@ -579,7 +580,8 @@ button {
 }
 
 header {
-  background: #333;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
   color: #FFF;
   padding-bottom: 2.571em;
 }
@@ -592,10 +594,18 @@ header section button:first-child {
 }
 
 .full-block {
-  padding: 3em;
+  padding: 50px 80px;
+}
+.full-block.split {
+  padding: 30px 35px;
 }
 .full-block h3 {
   text-align: center;
+}
+.full-block .column {
+  width: 49%;
+  padding: 35px 45px;
+  display: inline-block;
 }
 
 .social-block {

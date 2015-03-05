@@ -2,21 +2,22 @@
 @import "compass";
 
 // Variables
-$fontHead: 'Gill Sans', sans-serif;
 
-// Base - imports for all mixins + global project variables
-html, body {
-    box-sizing: border-box;
-    width: 100%;
-}
+// Margins & Padding
+$xlg-pd: 80px;
+$lrg-pd: 45px;
+$med-pd: 35px;
+$sml-pd: 20px;
+$lrg-vert-pd: 50px;
+$sml-vert-pd: 30px;
 
-body {
-    color: black;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-}
+// Colors
+$black: #333;
+$white: #FFF;
+$green: rgb(97, 185, 135);
+$fb: rgb(82, 125, 188);
+$twitter: rgb(104, 205, 239);
+$gPlus: rgb(77, 79, 84);
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+// Fonts
+$headFont: 'Gill Sans', sans-serif;

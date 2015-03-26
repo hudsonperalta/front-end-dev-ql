@@ -148,32 +148,32 @@ dfn {
  */
 h1 {
   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1.5em;
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.5em;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
 
-h2 {
-  font-size: 1.5em;
-  line-height: 2em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
 h3 {
-  font-size: 1.17em;
-  line-height: 1.28205em;
-  margin-top: 1.28205em;
-  margin-bottom: 1.28205em;
+  font-size: 1.75em;
+  line-height: 1.71429em;
+  margin-top: 0.85714em;
+  margin-bottom: 0.85714em;
 }
 
 h4 {
-  font-size: 1em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  font-size: 1.35em;
+  line-height: 2.22222em;
+  margin-top: 1.11111em;
+  margin-bottom: 1.11111em;
 }
 
 h5 {
@@ -561,22 +561,28 @@ body {
 
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
+  margin-right: .5em;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, button {
   font-family: "Gill Sans", sans-serif;
   font-weight: 300;
   margin: 0;
 }
-h1 strong, h2 strong, h3 strong {
+h1 strong, h2 strong, h3 strong, h4 strong, button strong {
   font-weight: 400;
 }
 
 button {
   background: none;
-  padding: 0.357em 0.714em;
   border: 2px solid #FFF;
   border-radius: 1.429em;
+  font-size: 1.25em;
+  padding: 0.5em 1.5em;
+}
+
+.button-row {
+  padding-top: 35px;
 }
 
 header {
@@ -606,6 +612,9 @@ header section button:first-child {
   width: 49%;
   padding: 35px 45px;
   display: inline-block;
+}
+.full-block .column .column-block {
+  margin-bottom: 30px;
 }
 
 .social-block {

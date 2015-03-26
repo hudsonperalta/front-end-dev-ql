@@ -1,4 +1,4 @@
-h1,h2,h3 {
+h1,h2,h3,h4,button {
     font-family: $headFont;
     font-weight: 300;
     margin: 0;
@@ -10,9 +10,14 @@ h1,h2,h3 {
 
 button {
     background: none;
-    padding: 0.357em 0.714em;
     border: 2px solid $white;
     border-radius: 1.429em;
+    font-size: 1.25em;
+    padding: 0.5em 1.5em;
+}
+
+.button-row {
+    padding-top: $med-pd;
 }
 
 header {
@@ -46,6 +51,10 @@ header {
         width: 49%; // should be 50%?
         padding: $med-pd $lrg-pd;
         display: inline-block;
+
+        .column-block {
+            margin-bottom: $sml-vert-pd;
+        }
     }
 }
 

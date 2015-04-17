@@ -559,6 +559,10 @@ body {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
   margin-right: .5em;
@@ -567,7 +571,8 @@ body {
 h1, h2, h3, h4, button {
   font-family: "Gill Sans", sans-serif;
   font-weight: 300;
-  margin: 0;
+  line-height: 1em;
+  margin: 0 0 0.5em 0;
 }
 h1 strong, h2 strong, h3 strong, h4 strong, button strong {
   font-weight: 400;
@@ -577,26 +582,66 @@ button {
   background: none;
   border: 2px solid #FFF;
   border-radius: 1.429em;
-  font-size: 1.25em;
-  padding: 0.5em 1.5em;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding: 0.35em 1.10em;
 }
 
 .button-row {
-  padding-top: 35px;
+  padding-top: 20px;
 }
 
 header {
   background-image: url("../img/background.jpg");
   background-size: cover;
   color: #FFF;
-  padding-bottom: 2.571em;
+  padding-bottom: 3.5em;
+}
+header a {
+  color: #FFF;
+  font-size: 1.25em;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 300;
+}
+header h1 {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 400;
 }
 header section {
-  margin: 1.786em 0;
+  margin: 6.786em 0;
   text-align: center;
 }
 header section button:first-child {
-  margin-right: 1.429em;
+  margin-right: 0.5em;
+}
+
+#logo {
+  background-image: url("../img/UXU-Logo.svg");
+  background-repeat: no-repeat;
+  background-size: 84px 29px;
+  display: inline-block;
+  height: 37px;
+  margin: 20px;
+  width: 105px;
+}
+
+nav {
+  float: right;
+  text-align: right;
+  width: 60%;
+}
+nav li {
+  display: inline-block;
+  margin-right: 45px;
+}
+nav li:last-child {
+  margin-right: 35px;
+}
+@media (max-width: 600px) {
+  nav li {
+    display: block;
+    margin-right: 35px;
+  }
 }
 
 .full-block {
@@ -612,6 +657,11 @@ header section button:first-child {
   width: 49%;
   padding: 35px 45px;
   display: inline-block;
+}
+@media (max-width: 600px) {
+  .full-block .column {
+    width: 100%;
+  }
 }
 .full-block .column .column-block {
   margin-bottom: 30px;

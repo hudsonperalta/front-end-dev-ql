@@ -21,3 +21,8 @@ $gPlus: rgb(77, 79, 84);
 
 // Fonts
 $headFont: 'Gill Sans', sans-serif;
+
+@mixin head-font($weight) {
+    font-family: $headFont;
+    font-weight: $weight;
+}

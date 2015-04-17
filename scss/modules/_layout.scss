@@ -1,7 +1,7 @@
 h1,h2,h3,h4,button {
-    font-family: $headFont;
-    font-weight: 300;
-    margin: 0;
+    @include head-font(300);
+    line-height: 1em;
+    margin: 0 0 0.5em 0;
 
     strong {
         font-weight: 400;
@@ -12,27 +12,68 @@ button {
     background: none;
     border: 2px solid $white;
     border-radius: 1.429em;
-    font-size: 1.25em;
-    padding: 0.5em 1.5em;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 0.35em 1.10em;
 }
 
 .button-row {
-    padding-top: $med-pd;
+    padding-top: $sml-pd;
 }
 
 header {
     background-image: url('../img/background.jpg');
     background-size: cover;
     color: $white;
-    padding-bottom: 2.571em;
+    padding-bottom: 3.5em;
+
+        a {
+            color: $white;
+            font-size: 1.25em;
+            @include head-font(300);
+        }
+
+        h1 {
+            @include head-font(400);
+        }
 
         section {
-            margin: 1.786em 0;
+            margin: 6.786em 0;
             text-align: center;
 
             button:first-child {
-                margin-right: 1.429em;
+                margin-right: 0.5em;
             }
+        }
+}
+
+#logo {
+    background-image: url('../img/UXU-Logo.svg');
+    background-repeat: no-repeat;
+    background-size: 84px 29px;
+    display: inline-block;
+    height: 37px;
+    margin: $sml-pd;
+    width: 105px;
+}
+
+nav {
+    float: right;
+    text-align: right;
+    width: 60%;
+
+        li {
+            display: inline-block;
+            margin-right: $lrg-pd;
+
+                &:last-child {
+                    margin-right: $med-pd;
+                }
+
+                @media (max-width: 600px) {
+                    display: block;
+                    margin-right: $med-pd;
+                }
         }
 }
 
@@ -51,6 +92,10 @@ header {
         width: 49%; // should be 50%?
         padding: $med-pd $lrg-pd;
         display: inline-block;
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
 
         .column-block {
             margin-bottom: $sml-vert-pd;

@@ -9,6 +9,7 @@ body {
     font-size: 14px;
     margin: 0;
     padding: 0;
+    vertical-align: top;
 }
 
 *, *:before, *:after {
@@ -17,4 +18,12 @@ body {
 
 a {
     text-decoration: none;
+}
+
+p {
+    margin-top: 0;
+}
+
+.mbn {
+    margin-bottom: 0;
 }

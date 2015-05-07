@@ -163,17 +163,17 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75em;
-  line-height: 1.71429em;
-  margin-top: 0.85714em;
-  margin-bottom: 0.85714em;
+  font-size: 1.95em;
+  line-height: 1.53846em;
+  margin-top: 0.76923em;
+  margin-bottom: 0.76923em;
 }
 
 h4 {
-  font-size: 1.35em;
-  line-height: 2.22222em;
-  margin-top: 1.11111em;
-  margin-bottom: 1.11111em;
+  font-size: 1.45em;
+  line-height: 2.06897em;
+  margin-top: 1.03448em;
+  margin-bottom: 1.03448em;
 }
 
 h5 {
@@ -553,6 +553,7 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0;
+  vertical-align: top;
 }
 
 *, *:before, *:after {
@@ -561,6 +562,14 @@ body {
 
 a {
   text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+.mbn {
+  margin-bottom: 0;
 }
 
 [class*="entypo-"]:before {
@@ -664,10 +673,24 @@ nav li:last-child {
   }
 }
 .full-block .column .column-block {
-  margin-bottom: 30px;
+  margin-bottom: 0;
+}
+.full-block .column .column-block:first-child {
+  margin-bottom: 50px;
+}
+.full-block .column .column-block h4 {
+  margin-bottom: 20px;
+}
+.full-block .column .column-block p {
+  margin: 0;
 }
 
 .social-block {
   background: #333;
   padding: 2em;
+}
+
+.full-img {
+  width: 100%;
+  height: auto;
 }

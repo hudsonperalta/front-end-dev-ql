@@ -98,7 +98,19 @@ nav {
         }
 
         .column-block {
-            margin-bottom: $sml-vert-pd;
+            margin-bottom: 0;
+
+            &:first-child {
+                margin-bottom: $lrg-vert-pd;
+            }
+
+            h4 {
+                margin-bottom: $sml-pd;
+            }
+
+            p {
+                margin: 0;
+            }
         }
     }
 }
@@ -106,4 +118,9 @@ nav {
 .social-block {
     background: $black;
     padding: 2em;
+}
+
+.full-img {
+    width: 100%;
+    height: auto;
 }

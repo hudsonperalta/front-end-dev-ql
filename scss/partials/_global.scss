@@ -18,12 +18,27 @@ body {
 
 a {
     text-decoration: none;
+    color: $black;
 }
 
 p {
     margin-top: 0;
 }
 
-.mbn {
-    margin-bottom: 0;
+.fb-link {
+    color: $fb;
+}
+
+.twitter-link {
+    color: $twitter;
+}
+
+.gPlus-link {
+    color: $gPlus;
+}
+
+.mobile-push {
+    @media (max-width: 600px) {
+        margin-top: $med-pd;
+    }
 }

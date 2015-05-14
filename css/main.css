@@ -1,10 +1,22 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+.mbn {
+  margin-bottom: 0;
+}
+
+.mtl {
+  margin-top: 1.563em;
+}
+
+.mbl {
+  margin-bottom: 2em;
+}
+
 /* normalize-scss 3.0.2+normalize.3.0.2 | MIT/GPLv2 License | bit.ly/normalize-scss */
 /**
  * Establish a vertical rhythm unit using $base-font-size, $base-line-height,
  * and $rhythm-unit variables. Also, correct text resizing oddly in IE 6/7 when
  * body `font-size` is set using `em` units.
  */
-@import url(http://weloveiconfonts.com/api/?family=entypo);
 html {
   font-size: 100%;
   line-height: 1.5em;
@@ -562,14 +574,29 @@ body {
 
 a {
   text-decoration: none;
+  color: #333;
 }
 
 p {
   margin-top: 0;
 }
 
-.mbn {
-  margin-bottom: 0;
+.fb-link {
+  color: #527dbc;
+}
+
+.twitter-link {
+  color: #68cdef;
+}
+
+.gPlus-link {
+  color: #4d4f54;
+}
+
+@media (max-width: 600px) {
+  .mobile-push {
+    margin-top: 35px;
+  }
 }
 
 [class*="entypo-"]:before {
@@ -603,6 +630,7 @@ button {
 header {
   background-image: url("../img/background.jpg");
   background-size: cover;
+  background-attachment: fixed;
   color: #FFF;
   padding-bottom: 3.5em;
 }
@@ -655,6 +683,11 @@ nav li:last-child {
 
 .full-block {
   padding: 50px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.full-block.crown {
+  margin-top: 25px;
 }
 .full-block.split {
   padding: 30px 35px;
@@ -666,17 +699,24 @@ nav li:last-child {
   width: 49%;
   padding: 35px 45px;
   display: inline-block;
+  vertical-align: top;
 }
 @media (max-width: 600px) {
   .full-block .column {
+    padding: 0 20px;
     width: 100%;
+  }
+  .full-block .column:first-of-type {
+    padding-top: 35px;
   }
 }
 .full-block .column .column-block {
-  margin-bottom: 0;
-}
-.full-block .column .column-block:first-child {
   margin-bottom: 50px;
+}
+@media (min-width: 601px) {
+  .full-block .column .column-block:last-child {
+    margin-bottom: 0;
+  }
 }
 .full-block .column .column-block h4 {
   margin-bottom: 20px;
@@ -684,13 +724,24 @@ nav li:last-child {
 .full-block .column .column-block p {
   margin: 0;
 }
+.full-block .column:last-child .column-block:last-child {
+  margin-bottom: 0px;
+}
 
 .social-block {
   background: #333;
   padding: 2em;
 }
 
-.full-img {
+.block-img {
   width: 100%;
   height: auto;
+}
+.block-img.block-img-med {
+  width: 90%;
+}
+@media (max-width: 600px) {
+  .block-img.block-img-med {
+    width: 100%;
+  }
 }

@@ -24,6 +24,7 @@ button {
 header {
     background-image: url('../img/background.jpg');
     background-size: cover;
+    background-attachment: fixed;
     color: $white;
     padding-bottom: 3.5em;
 
@@ -79,6 +80,12 @@ nav {
 
 .full-block {
     padding: $lrg-vert-pd $xlg-pd;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &.crown {
+        margin-top: 25px;
+    }
 
     &.split {
         padding: $sml-vert-pd $med-pd;
@@ -92,16 +99,24 @@ nav {
         width: 49%; // should be 50%?
         padding: $med-pd $lrg-pd;
         display: inline-block;
+        vertical-align: top;
 
         @media (max-width: 600px) {
+            padding: 0 $sml-pd;
             width: 100%;
+
+            &:first-of-type {
+                padding-top: $med-pd;
+            }
         }
 
         .column-block {
-            margin-bottom: 0;
+            margin-bottom: $lrg-vert-pd;
 
-            &:first-child {
-                margin-bottom: $lrg-vert-pd;
+            @media (min-width: 601px) {
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
 
             h4 {
@@ -112,6 +127,10 @@ nav {
                 margin: 0;
             }
         }
+
+        &:last-child .column-block:last-child {
+            margin-bottom: 0px;
+        }
     }
 }
 
@@ -120,7 +139,15 @@ nav {
     padding: 2em;
 }
 
-.full-img {
+.block-img {
     width: 100%;
     height: auto;
+
+    &.block-img-med {
+        width: 90%;
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+    }
 }

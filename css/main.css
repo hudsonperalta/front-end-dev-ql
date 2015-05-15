@@ -1,14 +1,22 @@
 @import url(http://weloveiconfonts.com/api/?family=entypo);
-.mbn {
-  margin-bottom: 0;
-}
-
 .mtl {
   margin-top: 1.563em;
 }
 
+.mbn {
+  margin-bottom: 0;
+}
+
 .mbl {
   margin-bottom: 2em;
+}
+
+.mbxl {
+  margin-bottom: 4em;
+}
+
+.center {
+  text-align: center;
 }
 
 /* normalize-scss 3.0.2+normalize.3.0.2 | MIT/GPLv2 License | bit.ly/normalize-scss */
@@ -581,6 +589,27 @@ p {
   margin-top: 0;
 }
 
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #333;
+  font-size: 1em;
+  padding: 10px 20px;
+}
+input:first-of-type {
+  margin-right: 45px;
+}
+
+.email-input {
+  width: 35%;
+}
+@media (max-width: 600px) {
+  .email-input {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
 .fb-link {
   color: #527dbc;
 }
@@ -614,17 +643,16 @@ h1 strong, h2 strong, h3 strong, h4 strong, button strong {
   font-weight: 400;
 }
 
-button {
+.button-row {
+  padding-top: 20px;
+}
+.button-row button {
   background: none;
   border: 2px solid #FFF;
   border-radius: 1.429em;
   font-size: 1.5em;
   font-weight: 300;
   padding: 0.35em 1.10em;
-}
-
-.button-row {
-  padding-top: 20px;
 }
 
 header {
@@ -692,40 +720,40 @@ nav li:last-child {
 .full-block.split {
   padding: 30px 35px;
 }
-.full-block h3 {
-  text-align: center;
-}
-.full-block .column {
+.full-block.split .column {
   width: 49%;
   padding: 35px 45px;
   display: inline-block;
   vertical-align: top;
 }
 @media (max-width: 600px) {
-  .full-block .column {
+  .full-block.split .column {
     padding: 0 20px;
     width: 100%;
   }
-  .full-block .column:first-of-type {
+  .full-block.split .column:first-of-type {
     padding-top: 35px;
   }
 }
-.full-block .column .column-block {
+.full-block.split .column .column-block {
   margin-bottom: 50px;
 }
 @media (min-width: 601px) {
-  .full-block .column .column-block:last-child {
+  .full-block.split .column .column-block:last-child {
     margin-bottom: 0;
   }
 }
-.full-block .column .column-block h4 {
+.full-block.split .column .column-block h4 {
   margin-bottom: 20px;
 }
-.full-block .column .column-block p {
+.full-block.split .column .column-block p {
   margin: 0;
 }
-.full-block .column:last-child .column-block:last-child {
+.full-block.split .column:last-child .column-block:last-child {
   margin-bottom: 0px;
+}
+.full-block h3 {
+  text-align: center;
 }
 
 .social-block {

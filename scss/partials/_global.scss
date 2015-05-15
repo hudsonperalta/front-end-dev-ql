@@ -25,6 +25,27 @@ p {
     margin-top: 0;
 }
 
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $black;
+    font-size: 1em;
+    padding: ($sml-pd/2) $sml-pd;
+
+    &:first-of-type {
+        margin-right: $lrg-pd;
+    }
+}
+
+.email-input {
+    width: 35%;
+
+    @media (max-width: 600px) {
+        margin-bottom: $sml-pd;
+        width: 100%;
+    }
+}
+
 .fb-link {
     color: $fb;
 }

@@ -11,16 +11,20 @@ $sml-pd: 20px;
 $lrg-vert-pd: 50px;
 $sml-vert-pd: 30px;
 
-.mbn {
-    margin-bottom: 0;
-}
-
 .mtl {
     margin-top: 1.563em;
 }
 
+.mbn {
+    margin-bottom: 0;
+}
+
 .mbl {
     margin-bottom: 2em;
+}
+
+.mbxl {
+    margin-bottom: 4em;
 }
 
 // Colors
@@ -37,4 +41,8 @@ $headFont: 'Gill Sans', sans-serif;
 @mixin head-font($weight) {
     font-family: $headFont;
     font-weight: $weight;
+}
+
+.center {
+    text-align: center;
 }

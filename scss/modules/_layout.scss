@@ -22,9 +22,7 @@ h1,h2,h3,h4,button {
 }
 
 header {
-    background-image: url('../img/background.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+    @extend .bg-cover;
     color: $white;
     padding-bottom: 3.5em;
 
@@ -135,8 +133,30 @@ nav {
 }
 
 .social-block {
-    background: $black;
-    padding: 2em;
+    @extend .bg-cover;
+    color: $white;
+    padding: $lrg-vert-pd $sml-pd;
+
+    .column {
+        text-align: center;
+    }
+
+    .social-link {
+        font-size: 5em;
+        line-height: 1em;
+
+        &:before {
+            margin-right: 0.25em;
+        }
+
+        &:last-child:before {
+            margin-right: 0em;
+        }
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .block-img {

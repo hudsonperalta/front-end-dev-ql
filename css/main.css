@@ -569,6 +569,8 @@ html, body {
 }
 
 body {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 300;
   color: black;
   font-size: 14px;
   margin: 0;
@@ -628,9 +630,15 @@ input:first-of-type {
   }
 }
 
+.bg-cover, header, .social-block {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 h1, h2, h3, h4, button {
@@ -656,9 +664,6 @@ h1 strong, h2 strong, h3 strong, h4 strong, button strong {
 }
 
 header {
-  background-image: url("../img/background.jpg");
-  background-size: cover;
-  background-attachment: fixed;
   color: #FFF;
   padding-bottom: 3.5em;
 }
@@ -757,8 +762,24 @@ nav li:last-child {
 }
 
 .social-block {
-  background: #333;
-  padding: 2em;
+  color: #FFF;
+  padding: 50px 20px;
+}
+.social-block .column {
+  text-align: center;
+}
+.social-block .social-link {
+  font-size: 5em;
+  line-height: 1em;
+}
+.social-block .social-link:before {
+  margin-right: 0.25em;
+}
+.social-block .social-link:last-child:before {
+  margin-right: 0em;
+}
+.social-block p:last-child {
+  margin-bottom: 0;
 }
 
 .block-img {

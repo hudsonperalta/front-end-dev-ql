@@ -5,6 +5,7 @@ html, body {
 }
 
 body {
+    @include head-font(300);
     color: black;
     font-size: 14px;
     margin: 0;
@@ -62,4 +63,10 @@ input {
     @media (max-width: 600px) {
         margin-top: $med-pd;
     }
+}
+
+.bg-cover {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }

@@ -69,7 +69,7 @@ nav {
                     margin-right: $med-pd;
                 }
 
-                @media (max-width: 600px) {
+                @media (max-width: $max-mobile) {
                     display: block;
                     margin-right: $med-pd;
                 }
@@ -94,7 +94,13 @@ nav {
             display: inline-block;
             vertical-align: top;
 
-            @media (max-width: 600px) {
+            &.no-rt-pad {
+                @media (min-width: $min-mobile) {
+                    padding-right: 0;
+                }
+            }
+
+            @media (max-width: $max-mobile) {
                 padding: 0 $sml-pd;
                 width: 100%;
 
@@ -127,6 +133,11 @@ nav {
         }
     }
 
+    .half {
+        width: 40%;
+        margin: 0 auto;
+    }
+
     h3 {
         text-align: center;
     }
@@ -144,9 +155,23 @@ nav {
     .social-link {
         font-size: 5em;
         line-height: 1em;
+        position: relative;
 
         &:before {
             margin-right: 0.25em;
+            position: relative;
+            z-index: 1;
+        }
+
+        &:after {
+            background: $white;
+            content: '';
+            height: 40px;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            width: 50px;
+            z-index: 0;
         }
 
         &:last-child:before {
@@ -166,7 +191,7 @@ nav {
     &.block-img-med {
         width: 90%;
 
-        @media (max-width: 600px) {
+        @media (max-width: $max-mobile) {
             width: 100%;
         }
     }

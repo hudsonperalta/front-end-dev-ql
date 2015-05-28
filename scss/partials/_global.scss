@@ -41,10 +41,14 @@ input {
 .email-input {
     width: 35%;
 
-    @media (max-width: 600px) {
+    @media (max-width: $max-mobile) {
         margin-bottom: $sml-pd;
         width: 100%;
     }
+}
+
+.full-width {
+    width: 100%;
 }
 
 .fb-link {
@@ -60,7 +64,7 @@ input {
 }
 
 .mobile-push {
-    @media (max-width: 600px) {
+    @media (max-width: $max-mobile) {
         margin-top: $med-pd;
     }
 }

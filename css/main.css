@@ -15,6 +15,10 @@
   margin-bottom: 4em;
 }
 
+.pbs {
+  padding-bottom: 0.5em !important;
+}
+
 .center {
   text-align: center;
 }
@@ -595,6 +599,7 @@ input {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #333;
+  border-radius: 0;
   font-size: 1em;
   padding: 10px 20px;
 }
@@ -613,6 +618,11 @@ input:first-of-type {
 }
 
 .full-width {
+  width: 100%;
+}
+
+.dTable {
+  display: table;
   width: 100%;
 }
 
@@ -638,6 +648,11 @@ input:first-of-type {
   background-image: url("../img/background.jpg");
   background-size: cover;
   background-attachment: fixed;
+}
+@media screen and (max-device-width: 480px) {
+  .bg-cover, header, .social-block {
+    background-attachment: scroll;
+  }
 }
 
 [class*="entypo-"]:before {
@@ -702,7 +717,7 @@ header section button:first-child {
 nav {
   float: right;
   text-align: right;
-  width: 60%;
+  width: 50%;
 }
 nav li {
   display: inline-block;
@@ -725,6 +740,11 @@ nav li:last-child {
 }
 .full-block.crown {
   margin-top: 25px;
+}
+.full-block.full {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
 .full-block.split {
   padding: 30px 35px;
@@ -767,8 +787,18 @@ nav li:last-child {
   margin-bottom: 0px;
 }
 .full-block .half {
-  width: 40%;
+  width: 80%;
   margin: 0 auto;
+}
+@media (max-width: 520px) {
+  .full-block .half {
+    width: 100%;
+  }
+}
+@media (min-width: 699px) {
+  .full-block .half {
+    width: 60%;
+  }
 }
 .full-block h3 {
   text-align: center;

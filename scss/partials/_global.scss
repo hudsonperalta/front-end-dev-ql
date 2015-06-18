@@ -30,6 +30,7 @@ input {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid $black;
+    border-radius: 0;
     font-size: 1em;
     padding: ($sml-pd/2) $sml-pd;
 
@@ -48,6 +49,11 @@ input {
 }
 
 .full-width {
+    width: 100%;
+}
+
+.dTable {
+    display: table;
     width: 100%;
 }
 
@@ -73,4 +79,8 @@ input {
     background-image: url('../img/background.jpg');
     background-size: cover;
     background-attachment: fixed;
+
+    @media screen and (max-device-width: 480px) {
+        background-attachment: scroll;
+    }
 }
